@@ -28,5 +28,5 @@ test('displays a dog suggestion', async () => {
   render(<App />);
 
   expect(screen.getByText(/loading/i)).toBeInTheDocument();
-  expect(await screen.findByText(/Malinois/i)).toBeInTheDocument();
+  expect(await screen.findByText(/malinois/i)).toBeInTheDocument();
 });

@@ -27,7 +27,6 @@ const options = {
       state.error = false;
     },
     [fetchSuggestion.fulfilled]: (state, action) => {
-      console.log('Received suggestion data:', action.payload);
       state.suggestion = action.payload;
       state.loading = false;
       state.error = false;
