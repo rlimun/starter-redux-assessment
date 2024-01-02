@@ -10,7 +10,11 @@ In the project directory, you can run the following commands:
 
 Installs the project dependencies, including Redux packages such as @reduxjs/toolkit and react-redux.
 
-### `npm run dev`
+`npm install uuid`
+
+Installs the Universally Unique Identifier library to generate unique IDs for each newly added photo
+
+`npm run dev`
 
 Runs the React app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -20,6 +24,22 @@ Runs an Express API at `http://localhost:3004` that exposes a single endpoint, `
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+`npm test`
 
 Runs the test suites.
+
+## How to use:
+### Adding a dog
+1. Enter the image url of the dog 
+2. Enter the image caption
+3. Click Submit
+4. The photo and caption of the dog should appear below
+
+### Deleting a dog photo
+There is a delete button below every dog photo. Just click this button to delete
+
+### Search by caption
+Enter text in the search box next to "Search by caption" to see the results in real-time
+
+### Suggestion of the day
+Suggestion of the day will suggest a new dog every day
