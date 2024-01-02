@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run the following commands:
 
-### `npm install`
+`npm install`
 
 Installs the project dependencies, including Redux packages such as @reduxjs/toolkit and react-redux.
 

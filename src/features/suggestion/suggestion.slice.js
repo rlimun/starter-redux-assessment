@@ -10,10 +10,9 @@ export const fetchSuggestion =
   createAsyncThunk(/* Task 15: Complete the `createAsyncThunk()` function to load a suggestion from this URL: http://localhost:3004/api/suggestion */
     'suggestion/fetchSuggestion',
     async(thunkAPI) => {
-      const response = await fetch('http://localhost:3004/api/suggestion').then(
-        (data) => data.json()
-      )
-      return response;
+      const response = await fetch('http://localhost:3004/api/suggestion');
+      const { data } = await response.json();
+      return data;
     }
   );
 
@@ -45,6 +44,6 @@ const suggestionSlice = createSlice(options);
 export default suggestionSlice.reducer;
 
 // Task 17: Create a selector, called `selectSuggestion`, for the `suggestion` state variable and export it from the file
-export const selectSuggestion = (state) => state.suggestion;
+export const selectSuggestion = (state) => state.suggestion.suggestion;
 export const selectLoading = (state) => state.suggestion.loading;
 export const selectError = (state) => state.suggestion.error;
